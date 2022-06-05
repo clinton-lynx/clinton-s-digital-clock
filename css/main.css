@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: #164949;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -20,4 +21,128 @@ input, button {
   font-size: 2.5rem;
   text-transform: capitalize;
   font-weight: 500;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 3px solid #164949;
+  border-radius: 8px;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 25vh auto;
+  min-width: 290px;
+  max-width: 500px;
+}
+
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.main {
+  margin: 2.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.time {
+  font-family: monospace;
+  font-size: 3rem;
+}
+
+#form {
+  width: 100%;
+  padding: 0 1em;
+}
+
+#input-el {
+  width: 100%;
+  border: 2px solid #66923e;
+  padding: .5rem 1rem;
+  margin: 1rem auto;
+  display: block;
+  max-width: 390px;
+  border-radius: 20px;
+}
+
+.btn-wrapper {
+  margin: .5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 360px;
+}
+
+#set-el, #clear-el {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  color: #eeffff;
+  border-radius: 10px;
+  padding: .4rem .8rem;
+  background-color: #66923e;
+}
+
+#clear-el {
+  background-color: #927848;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .header h1 {
+    font-size: 2rem;
+  }
+  body {
+    border: none;
+    border-radius: none;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin: 0 auto;
+    min-width: none;
+    max-width: none;
+  }
 }
